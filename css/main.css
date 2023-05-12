@@ -97,7 +97,7 @@ header.fixed #logo {
 .zakaz {
   padding: 5px 9px;
   font-size: 1.2em;
-cursor: pointer;
+  cursor: pointer;
 }
 
 #top {
@@ -111,7 +111,7 @@ cursor: pointer;
   color: #fff;
   font-size: 3em;
   vertical-align: top;
-border-radius: 0 0 30px 30px;;
+  border-radius: 0 0 30px 30px;;
 }
 
 @media (min-width: 1001px){
@@ -207,7 +207,6 @@ border-radius: 0 0 30px 30px;;
   background-color: #f0f7f7;
   background-size: cover;
   background-attachment: fixed;
-  padding: 50px 0;
   width: 100%;
   text-align: center;
   color: black;
