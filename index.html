@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сайт</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <div id="logo" onclick="slowScroll('#top')">
+    <span>Overplan</span>
+  </div>
+  <div id="about">
+    <a href="#" title="" onclick="slowScroll('#main')">Возможности</a>
+    <a href="#" title="" onclick="slowScroll('#overview')">Преимущества</a>
+    <a href="#" title="" onclick="slowScroll('#contacts')">Контакты</a>
+    <a href="#" title="" onclick="slowScroll('#faq')">FAQ</a>
+    <a href="form-lesson\form-lesson\index.html" class="zakaz">Заказать проект</a>
+  </div>
+</header>
+<div id="top">
+  <h1>Overplan</h1>
+  <h4>Ваш надежный партнёр по 1С-Битрикс и Битрикс24</h4>
+</div>
+
+<div id="main">
+  <div class="intro">
+    <h2>Разрабатываем приложения для <br>
+      Битрикс24!</h2>
+  </div>
+  <div class="text">
+    <span>Разработка гибридных мобильных приложений</span><br>
+    <span>Регистрация и публикация в магазинах приложений</span>
+  </div>
+</div>
+
+<div id="main">
+  <div class="intro">
+    <h2>Разрабатываем и развиваем интернет-проекты!</h2>
+  </div>
+  <div class="text">
+    <span>Разработка интернет-магазинов</span><br>
+    <span>Разработка корпоративных сайтов</span><br>
+    <span>Разработка сложных интернет-решений</span><br>
+    <span>Сложные интеграции с 1С и другими учетными программами</span><br>
+    <span>Технический аудит интернет-проектов</span>
+  </div>
+</div>
+
+<div id="main">
+  <div class="intro">
+    <h2>Внедряем, интегрируем и дорабатываем Битрикс24!</h2>
+  </div>
+  <div class="text">
+    <span>CRM-маркетинг</span> <br>
+    <span>Внедрение Битрикс24 "в коробке" для компаний от 12 сотрудников за 50 рабочих дней!</span><br>
+    <span>Внедрение Битрикс24 для компаний от 12 сотрудников за 40 рабочих дней!</span><br>
+    <span>Внедрение сквозной аналитики в Битрикс24!<br></span>
+  </div>
+</div>
+
+<div id="overview">
+  <h2>Преимущества</h2>
+  <h4>С нами всё проще!!!</h4>
+
+  <div class="img">
+    <img src="https://avatars.mds.yandex.net/i?id=d6bca8571052140f90e8c3bb0747429dd1d409da-7092330-images-thumbs&n=13"
+         alt="">
+    <span>Золотой сертифицированный партнёр 1С-Битрикс</span>
+  </div>
+  <div class="img">
+    <img src="Images\12.PNG" alt="">
+    <span>Золотой партнер Битрикс24 </span>
+  </div>
+  <div class="img">
+    <img
+      src="https://sun6-20.userapi.com/s/v1/if1/vSEmNP3NcS-h4vYrobfiHItSgCZ-pJR_ydq-FvbUQBtaamR-8BjhARNU7jj0GnS5XqLjDaYR.jpg?size=890x892&quality=96&crop=306,49,890,892&ava=1"
+      alt="">
+    <span>Интеграция с 1С</span>
+  </div>
+  <div class="img">
+    <img src="https://wpsgroup.ru/upload/bitrix_kachestvo.png" alt="">
+    <span>Участник программы качества внедрений</span>
+  </div>
+
+  <div id="contacts">
+    <center><h3>Контакты</h3></center>
+    <h5>Пока вы думаете,
+      ваши конкуренты уже звонят нам
+      и привлекают новых клиентов!</h5>
+    <span>8 (800) 707-40-43</span>
+    <span>hello@overplan.ru</span>
+    <span>Адрес: Ярославль, ул. Угличская 39В (Здание 3), офис 204, 205</span>
+    <span><p>Официальный сайт:<a href="https://overplan.ru/" style="text-decoration: none"> Overplan</a></p></span>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Гарантия на разработки</span><br>
+      <span class="heading">Гарантийная техническая и консультационная поддержка после каждого блока работ.</span>
+    </div>
+    <div>
+      <span class="title">Выстроенные системы</span><br>
+      <span class="heading">Контроль версий, автоматический мониторинг проектов и другие технические решения.</span>
+
+    </div>
+    <div>
+      <span class="title">Ответственность за результат</span><br>
+      <span class="heading">Выслушиваем, высказываем экспертное мнение, разрабатываем технические задания.</span>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if ($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
