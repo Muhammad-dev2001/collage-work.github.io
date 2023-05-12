@@ -1,5 +1,5 @@
 Дипломная работа колледжа
- https://github.com/Muhammad-dev2001/collage-work.github.io
+https://muhammad-dev2001.github.io/collage-work.github.io
 
 В собственном проекте я постарался использовать все свои знания и технологии.
 1. HTML
